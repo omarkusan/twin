@@ -1,0 +1,534 @@
+{
+  "meta": {
+    "version": "2026-10-26",
+    "sources": [
+      "Resume provided by Maimaiti Aimaier (Principal AI Engineer / Full Stack Tech Lead version)",
+      "Existing repository data (backend/data/sources: LinkedIn export, facts)",
+      "This repository (architecture of the twin itself)"
+    ],
+    "editingNote": "This file is the single source of truth. The website renders it and the AI twin is grounded on it. Only add facts you can stand behind: the twin will repeat them."
+  },
+  "profile": {
+    "fullName": "Maimaiti Aimaier",
+    "preferredName": "Omar",
+    "headline": "AI Engineer | Full Stack Tech Lead",
+    "location": "Dallas, TX",
+    "yearsExperience": 9,
+    "summary": "Full stack tech lead with nine years of experience building reusable frameworks, secure APIs, and cloud-native services that other engineering teams build on, in regulated banking, healthcare, and logistics environments. Deep expertise in Java 21 / Spring Boot and React, with production discipline in security, CI/CD, architecture governance, and API design. Now building agentic AI systems with multi-agent orchestration, tool calling, and Model Context Protocol (MCP) across OpenAI, Anthropic Claude, and Google Gemini APIs, focused on making AI agents secure, reusable, and production-ready.",
+    "heroHeadline": "Building intelligent software. Exploring the future of AI.",
+    "heroCopy": "I'm a full stack tech lead with nine years of experience shipping secure APIs and cloud-native services in banking, healthcare, and logistics. Now I'm applying that production discipline to agentic AI: multi-agent systems, tool calling, and MCP.",
+    "about": [
+      "I build the layer other teams depend on: reusable frameworks, secure APIs, and cloud-native services. Over nine years that has meant regulated environments in banking, healthcare, and logistics, where security, auditability, and release discipline are part of the definition of done.",
+      "At PNC Bank I own the architecture, API contracts, security model, deployment strategy, and production support for a Java 21 / Spring Boot extension layer on NICE Actimize, supporting anti-money-laundering detection. That is also where AI entered my day job: I built an LLM-powered agent and MCP server for compliance analysts, with access controls and audit logging, and I led AI enablement for engineers: usage guidelines and security review of AI tools.",
+      "Alongside that work I have been going deep on agentic AI. I completed the AI Engineer Agentic Track (Udemy), earned the Agentic AI certificate from DeepLearning.AI, and built multi-agent systems with the OpenAI Agents SDK and MCP. This site is the most complete example: an AI twin of me, grounded on a structured profile, with automated checks for what it should and should not say."
+    ],
+    "principles": [
+      {
+        "title": "Build what other teams build on",
+        "body": "I favour reusable foundations over one-off features.",
+        "evidence": "A reusable authentication and authorization framework adopted by multiple integration teams at PNC; a React component library adopted by multiple product teams at Abbott."
+      },
+      {
+        "title": "Security is part of delivery",
+        "body": "Controls belong in the pipeline and the architecture, not in a late review.",
+        "evidence": "Automated security scanning in CI/CD and platform-wide CVE remediation (100+ CVEs closed) at PNC; access control and data protection that passed compliance audits with zero findings at Abbott."
+      },
+      {
+        "title": "Make AI agents production-ready",
+        "body": "An agent that touches regulated data needs access controls, audit logs, and clear guidance, not just a good prompt.",
+        "evidence": "An LLM-powered agent and MCP server for compliance analysts with access controls and audit logging; AI usage guidelines and security review of AI tools at PNC."
+      }
+    ],
+    "links": {
+      "email": "mm.aimaier@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/maimaiti",
+      "github": "https://github.com/omarkusan",
+      "site": "https://maimaitidigitaltwin.com"
+    },
+    "proofPoints": [
+      {
+        "value": "100+",
+        "label": "CVEs closed in platform-wide remediation",
+        "company": "PNC Bank"
+      },
+      {
+        "value": "2 mo → ~2 wk",
+        "label": "to deliver new AML detection scenarios",
+        "company": "PNC Bank"
+      },
+      {
+        "value": "40%",
+        "label": "fewer deployment-related incidents",
+        "company": "BNSF Railway"
+      },
+      {
+        "value": "0",
+        "label": "findings across multiple compliance audits",
+        "company": "Abbott Laboratories"
+      }
+    ]
+  },
+  "experience": [
+    {
+      "id": "pnc",
+      "company": "PNC Bank",
+      "title": "Full Stack Tech Lead Engineer",
+      "start": "Mar 2025",
+      "end": "Present",
+      "context": "Financial crime / anti-money-laundering (AML) detection platform built on NICE Actimize",
+      "highlights": [
+        "Own architecture, API contracts, security model, deployment strategy, and production support for a Java 21 / Spring Boot extension layer on NICE Actimize, supporting compliance analysts and transactions.",
+        "Built an LLM-powered agent and MCP server for compliance analysts to detect fraud cases, with access controls and audit logging for a regulated environment.",
+        "Led AI enablement for engineers: usage guidelines, security review of AI tools, and partnership with security, architecture, and compliance on responsible-AI adoption.",
+        "Applied AI coding assistants (Claude Code, GitHub Copilot) in the team's engineering workflow for coding, test generation, refactoring, CVE fixes, and code review.",
+        "Built a reusable authentication and authorization framework for REST APIs and batch processes, adopted by multiple integration teams.",
+        "Designed Spring Boot microservices that extend Actimize detection models.",
+        "Integrated automated security scanning into CI/CD pipelines and led platform-wide CVE remediation, including transitive vulnerabilities in vendor components.",
+        "Partner with compliance teams, analysts, product owners, and downstream application teams to turn detection requirements into secure, production-ready services."
+      ],
+      "impact": [
+        "Cut delivery of new AML detection scenarios from vendor release cycles of about 2 months to about two weeks.",
+        "Closed 100+ CVEs and reduced late-stage remediation effort by 30%.",
+        "Improved release quality and compliance readiness through automated security validation and proactive vulnerability management."
+      ],
+      "technologies": [
+        "Java 21",
+        "Spring Boot",
+        "NICE Actimize",
+        "REST APIs",
+        "MCP",
+        "LLM agents",
+        "CI/CD",
+        "Claude Code",
+        "GitHub Copilot"
+      ]
+    },
+    {
+      "id": "bnsf",
+      "company": "BNSF Railway",
+      "title": "Technology Lead",
+      "start": "Jan 2023",
+      "end": "Dec 2024",
+      "context": "Modernization of critical rail operations platforms",
+      "highlights": [
+        "Led modernization of a critical rail operations platform, defining the target architecture, migration strategy, engineering standards, and implementation roadmap.",
+        "Established code review and architecture governance across distributed teams and mentored offshore Java and React engineers.",
+        "Re-architected legacy applications into containerized microservices on Kubernetes and OpenShift, improving scalability and throughput metrics.",
+        "Designed CI/CD pipelines with GitHub and Jenkins that automated build, test, and deployment."
+      ],
+      "impact": [
+        "Increased release frequency from quarterly to monthly and reduced deployment-related incidents by 40%.",
+        "Transformed a critical legacy system into a cloud-native platform, streamlining operations and supporting long-term scalability."
+      ],
+      "technologies": [
+        "Java",
+        "React",
+        "Microservices",
+        "Kubernetes",
+        "OpenShift",
+        "Jenkins",
+        "GitHub"
+      ]
+    },
+    {
+      "id": "abbott",
+      "company": "Abbott Laboratories",
+      "title": "Full Stack Developer",
+      "start": "Mar 2020",
+      "end": "Nov 2022",
+      "context": "Enterprise healthcare applications on AWS microservices",
+      "highlights": [
+        "Built a reusable React component library adopted by multiple product teams, standardizing the user experience.",
+        "Owned end-to-end API development in a distributed AWS microservices architecture, delivering REST APIs for React front ends and integrated healthcare systems handling thousands of requests per day.",
+        "Implemented access control and data-protection mechanisms for regulated healthcare data.",
+        "Standardized service interfaces to reduce integration effort for consuming applications, and translated business requirements into technical specifications."
+      ],
+      "impact": [
+        "Reduced UI development time by 30% through the shared component library.",
+        "Passed multiple compliance audits with zero findings.",
+        "Reduced integration effort for consuming applications through reusable services and standardized APIs."
+      ],
+      "technologies": [
+        "React",
+        "AWS",
+        "Microservices",
+        "REST APIs"
+      ]
+    },
+    {
+      "id": "verizon",
+      "company": "Verizon",
+      "title": "Full Stack Developer",
+      "start": "Feb 2019",
+      "end": "Feb 2020",
+      "context": "",
+      "highlights": [
+        "Built Spring Boot microservices on AWS integrated with React front ends; supported cloud deployments and Agile sprint planning with product owners."
+      ],
+      "impact": [],
+      "technologies": [
+        "Spring Boot",
+        "AWS",
+        "React",
+        "Microservices"
+      ]
+    },
+    {
+      "id": "citi",
+      "company": "Citigroup",
+      "title": "Full Stack Developer",
+      "start": "Oct 2017",
+      "end": "Jan 2019",
+      "context": "",
+      "highlights": [
+        "Built secure web applications with Spring Boot and Angular, designing and consuming REST APIs for cross-system data integration."
+      ],
+      "impact": [],
+      "technologies": [
+        "Spring Boot",
+        "Angular",
+        "REST APIs"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "ai",
+      "title": "AI Engineering",
+      "status": "hands-on",
+      "items": [
+        "LLM APIs (OpenAI, Anthropic Claude, Google Gemini)",
+        "Multi-agent orchestration (OpenAI Agents SDK, CrewAI, LangGraph, AutoGen)",
+        "Model Context Protocol (MCP)",
+        "Tool / function calling",
+        "Prompt engineering",
+        "Structured outputs (Pydantic)",
+        "Gradio, Hugging Face Spaces",
+        "Amazon Bedrock (this site)"
+      ]
+    },
+    {
+      "id": "backend",
+      "title": "Backend Engineering",
+      "status": "core",
+      "items": [
+        "Java 21",
+        "Spring Boot",
+        "Python",
+        "Node.js",
+        "Kotlin",
+        "REST APIs",
+        "GraphQL",
+        "Microservices",
+        "Kafka / event-driven architecture",
+        "Batch processing",
+        "API authentication and authorization"
+      ]
+    },
+    {
+      "id": "frontend",
+      "title": "Frontend Engineering",
+      "status": "core",
+      "items": [
+        "React",
+        "TypeScript",
+        "JavaScript",
+        "Next.js",
+        "Angular",
+        "HTML5 / CSS3",
+        "Reusable component libraries"
+      ]
+    },
+    {
+      "id": "cloud",
+      "title": "Cloud and DevOps",
+      "status": "core",
+      "items": [
+        "AWS (EC2, ECS, EKS, Lambda, S3, RDS)",
+        "Azure",
+        "Docker",
+        "Kubernetes",
+        "OpenShift",
+        "Jenkins",
+        "GitHub",
+        "Maven / Gradle",
+        "CI/CD with automated security scanning"
+      ]
+    },
+    {
+      "id": "data",
+      "title": "Data",
+      "status": "core",
+      "items": [
+        "PostgreSQL",
+        "MySQL",
+        "Oracle",
+        "MongoDB",
+        "SQL"
+      ]
+    },
+    {
+      "id": "security",
+      "title": "Security and Practices",
+      "status": "core",
+      "items": [
+        "OWASP",
+        "CVE remediation",
+        "Regulated environments (AML / financial crime, healthcare)",
+        "Architecture governance",
+        "Agile / SAFe / Scrum"
+      ]
+    },
+    {
+      "id": "exploring",
+      "title": "Actively exploring",
+      "status": "exploring",
+      "items": [
+        "Retrieval-augmented generation (RAG)",
+        "AI application evaluation"
+      ],
+      "note": "Listed as areas of exploration rather than established production experience."
+    }
+  ],
+  "projects": [
+    {
+      "id": "digital-twin",
+      "name": "AI Digital Twin (this website)",
+      "featured": true,
+      "status": "Live",
+      "kind": "Full-stack AI application",
+      "summary": "An interactive AI representation of me, grounded on a structured profile and deployed on AWS with infrastructure as code.",
+      "problem": "Let visitors ask questions about my background and work, and get answers grounded in documented facts instead of reading a static page.",
+      "approach": [
+        "Next.js static site served from S3 and CloudFront; the chat calls a FastAPI service on AWS Lambda behind API Gateway.",
+        "The model is called through the Amazon Bedrock Converse API with the system prompt in the dedicated system field.",
+        "A structured JSON profile is the single source of truth for both the website and the twin's knowledge; the whole profile fits in the prompt, so no vector database is used.",
+        "Server-side input validation, per-client rate limiting, safe error responses, and structured logs (latency, token usage, model and prompt versions) without message contents.",
+        "Offline automated tests and a separate opt-in live evaluation suite covering grounding, missing information, invented achievements, and prompt-extraction attempts.",
+        "Infrastructure managed with Terraform workspaces (dev, test, prod) and deployed through GitHub Actions."
+      ],
+      "stack": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "FastAPI",
+        "Python",
+        "AWS Lambda",
+        "API Gateway",
+        "Amazon Bedrock",
+        "S3",
+        "CloudFront",
+        "Terraform",
+        "GitHub Actions"
+      ],
+      "flow": [
+        "Browser",
+        "CloudFront + S3",
+        "API Gateway",
+        "Lambda (FastAPI)",
+        "Amazon Bedrock"
+      ],
+      "links": {
+        "github": "https://github.com/omarkusan/twin",
+        "demo": "https://maimaitidigitaltwin.com"
+      },
+      "limits": "Responses are returned whole rather than streamed, because API Gateway HTTP APIs do not stream Lambda responses.",
+      "isThisSite": true
+    },
+    {
+      "id": "career-twin-agent",
+      "name": "Career Digital Twin Agent",
+      "featured": false,
+      "status": "Built",
+      "kind": "Conversational agent",
+      "summary": "A conversational agent deployed on Hugging Face Spaces that answers recruiter questions about my background.",
+      "problem": "Answer recruiter questions about my background and make sure questions the agent cannot answer are not lost.",
+      "approach": [
+        "Uses tool calling to log unanswered questions and capture contact details, with push notifications.",
+        "Built with Python and the OpenAI API, with a Gradio interface, deployed on Hugging Face Spaces."
+      ],
+      "stack": [
+        "Python",
+        "OpenAI API",
+        "Tool calling",
+        "Gradio",
+        "Hugging Face Spaces"
+      ],
+      "flow": [
+        "Recruiter question",
+        "LLM + tool calling",
+        "Log unanswered question / capture contact",
+        "Push notification"
+      ],
+      "links": {},
+      "limits": ""
+    },
+    {
+      "id": "deep-research",
+      "name": "Multi-Agent Deep Research System",
+      "featured": false,
+      "status": "Built",
+      "kind": "Multi-agent pipeline",
+      "summary": "A planner, search, and writer agent pipeline that produces a structured research report and emails it.",
+      "problem": "Turn a research question into a structured report by coordinating several specialised agents.",
+      "approach": [
+        "A planner agent, search agents, and a writer agent built on the OpenAI Agents SDK.",
+        "Web searches run in parallel with asyncio.",
+        "The report is synthesized with Pydantic-typed outputs and emailed."
+      ],
+      "stack": [
+        "Python",
+        "OpenAI Agents SDK",
+        "asyncio",
+        "Pydantic"
+      ],
+      "flow": [
+        "Planner agent",
+        "Parallel web searches",
+        "Writer agent",
+        "Emailed report"
+      ],
+      "links": {},
+      "limits": ""
+    },
+    {
+      "id": "trading-mcp",
+      "name": "Agentic Trading Simulation with MCP",
+      "featured": false,
+      "status": "Built",
+      "kind": "Multi-agent system with MCP",
+      "summary": "A four-agent trading simulation where agents use multiple MCP servers to research, decide, and execute simulated trades.",
+      "problem": "Explore how several agents can share tools and state through MCP servers in a simulated trading environment.",
+      "approach": [
+        "Four agents built with the OpenAI Agents SDK.",
+        "Multiple MCP servers: market data, accounts, and memory.",
+        "A live Gradio dashboard for monitoring. Trades are simulated."
+      ],
+      "stack": [
+        "Python",
+        "OpenAI Agents SDK",
+        "MCP",
+        "Gradio"
+      ],
+      "flow": [
+        "Four agents",
+        "MCP servers: market data, accounts, memory",
+        "Simulated trades",
+        "Gradio dashboard"
+      ],
+      "links": {},
+      "limits": "A simulation only; it does not place real trades."
+    }
+  ],
+  "learning": {
+    "now": [
+      {
+        "title": "Generative and Agentic AI in Production",
+        "detail": "Udemy course, in progress.",
+        "kind": "Course"
+      },
+      {
+        "title": "Retrieval-augmented generation and AI evaluation",
+        "detail": "Active areas of exploration. This site uses a structured knowledge file and an offline evaluation suite rather than RAG, because the profile is small enough to fit in the prompt.",
+        "kind": "Exploring"
+      }
+    ],
+    "completed": [
+      {
+        "title": "AI Engineer Agentic Track: The Complete Agent & MCP Course",
+        "detail": "Udemy (Ed Donner). Completed.",
+        "kind": "Course"
+      },
+      {
+        "title": "Agentic AI",
+        "detail": "DeepLearning.AI certificate, issued Aug 2026 (listed on LinkedIn).",
+        "kind": "Certificate"
+      }
+    ],
+    "building": [
+      {
+        "title": "This AI digital twin",
+        "detail": "Grounded knowledge, safer request handling, observability, and an evaluation harness. See the project write-up.",
+        "kind": "Project"
+      },
+      {
+        "title": "AI agents for regulated environments",
+        "detail": "At PNC: an LLM-powered agent and MCP server for compliance analysts, with access controls and audit logging.",
+        "kind": "Work"
+      }
+    ],
+    "engineeringNotes": [
+      {
+        "title": "Keep knowledge in data, not in prompt strings",
+        "detail": "The twin's knowledge lives in one structured JSON file shared with the website, so a fact is corrected in one place."
+      },
+      {
+        "title": "Test the refusals, not just the answers",
+        "detail": "The evaluation cases include missing information, invented achievements, and prompt-extraction attempts, and the default suite runs offline at no model cost."
+      },
+      {
+        "title": "Log behaviour, not conversations",
+        "detail": "Operational logs record latency, token usage, and versions, but never message contents or secrets."
+      }
+    ],
+    "focus": "Making AI agents secure, reusable, and production-ready."
+  },
+  "education": [
+    {
+      "title": "Bachelor of Computer Science",
+      "institution": "Xinjiang University, Urumqi, China",
+      "detail": "Relevant coursework: Machine Learning, Algorithms, Database Systems, Software Engineering, Web Database Applications."
+    }
+  ],
+  "preferences": {
+    "communicationStyle": [
+      "Professional but approachable",
+      "Focus on practical solutions",
+      "Use clear, concise language",
+      "Share relevant examples when helpful"
+    ],
+    "interests": [
+      "Practical agentic AI systems rather than tutorial exercises",
+      "Secure, reusable, production-ready AI agents",
+      "How a traditional software engineering background (APIs, security, CI/CD, governance) complements AI engineering"
+    ]
+  },
+  "twin": {
+    "greeting": "Hi, I'm the AI twin of Omar (Maimaiti Aimaier). Ask me about my engineering background, my projects, or how I'm moving into AI engineering. I'm an AI built from my documented profile, so I'll tell you when something isn't covered.",
+    "starters": [
+      "Tell me about your engineering background.",
+      "What AI projects are you building?",
+      "How are you exploring agentic AI?",
+      "Walk me through your most interesting project.",
+      "Explain your experience with Java and Spring Boot.",
+      "What are you learning right now?"
+    ],
+    "followups": {
+      "profile": [
+        "What did you do at PNC Bank?",
+        "What are you learning right now?"
+      ],
+      "experience": [
+        "What is the impact you are proudest of?",
+        "How did you use AI in your engineering workflow?"
+      ],
+      "skills": [
+        "Which skills are you still developing?",
+        "How do Java and AI engineering fit together?"
+      ],
+      "project": [
+        "How is this twin built?",
+        "Which of your projects uses MCP?"
+      ],
+      "learning": [
+        "What have you built with MCP?",
+        "How do you evaluate AI applications?"
+      ],
+      "education": [
+        "What are you studying right now?"
+      ]
+    },
+    "outOfScope": "Personal and private matters (family, home address, phone number, finances), salary or availability commitments, and tasks unrelated to Omar's professional background or software and AI engineering."
+  }
+}

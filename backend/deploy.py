@@ -42,13 +42,15 @@ def main():
 
     # Copy application files
     print("Copying application files...")
-    for file in ["server.py", "lambda_handler.py", "context.py", "resources.py"]:
-        if os.path.exists(file):
-            shutil.copy2(file, "lambda-package/")
-    
-    # Copy data directory
-    if os.path.exists("data"):
-        shutil.copytree("data", "lambda-package/data")
+    for file in ["server.py", "lambda_handler.py", "context.py", "knowledge.py", "safety.py", "telemetry.py"]:
+        shutil.copy2(file, "lambda-package/")
+
+    # Copy the structured knowledge source (single source of truth shared with the website)
+    profile = os.path.join("..", "content", "profile.json")
+    if not os.path.exists(profile):
+        raise FileNotFoundError(f"{profile} not found; the twin cannot be packaged without its knowledge file")
+    os.makedirs("lambda-package/data")
+    shutil.copy2(profile, "lambda-package/data/profile.json")
 
     # Create zip
     print("Creating zip file...")

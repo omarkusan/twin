@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# generated copy of ../content/profile.json (see scripts/sync-content.mjs)
+/content/profile.json
